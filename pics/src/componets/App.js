@@ -12,7 +12,9 @@ class App extends React.Component {
                 params: {query: term},
                 headers: {Authorization: 'Client-ID tw4VYePIpJCddXgFQuCKW85emB8kMAJ9wAGX2bN2NW8'}
 
-            })
+            }).then((response)=>{
+                console.log(response.data.results);
+        })
     }
 
     render() {
